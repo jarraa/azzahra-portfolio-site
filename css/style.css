@@ -2,6 +2,11 @@
     background: linear-gradient(to right, #f8f9fa, #7f8bea);
 }
 
+h1, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+/* Home Section  */
 /* Space Background */
 .home-section {
   height: 100vh;
@@ -27,7 +32,6 @@
 
 /* Welcome message */ 
 .welcome-message { 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     letter-spacing: 1px;
 } 
 
@@ -46,7 +50,6 @@
 /* Introduction Text */ 
 .introduction { 
     letter-spacing: 1px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 } 
 
 .btn-p {
@@ -67,6 +70,52 @@
     color: #fff;
     background: transparent;
     transition: all 0.3s ease;
+}
+
+/* About me Section  */
+/* Space Background */
+.aboutme-section {
+  background: radial-gradient(circle at top, #c4c4ea, #ffffff);
+  color: black;
+  /* position: relative;
+  overflow: hidden; */
+}
+
+/* .aboutme-section::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-500px, -500px); }
+} */
+
+/* Project Section  */
+/* Space Background */
+.project-section {
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-section::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-500px, -500px); }
 }
 
 .footer-content {

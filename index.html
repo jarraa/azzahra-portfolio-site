@@ -38,7 +38,7 @@
     <!-- Main Content -->
     <main>
         <!-- Home Section -->
-        <section id="home" class="home-section min-h-[100vh] flex flex-col">
+        <section id="home" class="home-section min-h-[100vh] flex flex-col px-12 py-6">
             <br>
             <div class="welcome-message text-center">
                 <h1 class="pb-2">Hi, Bimo! Welcome To My Digital Space ✨</h1>
@@ -48,7 +48,7 @@
 
             <!-- Introduction & Sample Project -->
             <div class="flex">
-                <div class="introduction pl-8">
+                <div class="introduction">
                     <p class="text-2xl text-purple-50 font-semibold pb-2">My name is</p>
                     <p class="text-5xl text-purple-400 font-extrabold pb-4">Azzahra Auliya Rahmah</p>
                     <p class="text-2xl text-purple-300 font-bold pb-4">Bachelor's Degree in Informatics</p>
@@ -60,47 +60,127 @@
                 </div>
                 
                 <div class="-mt-16 pl-8">
-                    <img src="img/mockup-portfolio.png" class="w-[400px] relative" />
+                    <img src="img/mockup-portfolio.png" alt="Project Mockup UI/UX" class="w-[400px] relative" />
                 </div>
              </div>
         </section>
         <hr>
 
         <!-- About Section -->
-        <section id="aboutme" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1>Hi, Bimo! Welcome To My Digital Space ✨</h1>
-            <p>I'm <b>Azzahra Auliya Rahmah</b>
-            - Currently exploring and growing in Web Development and Data Analysis.</p>
-            <p>Here you’ll find my projects, skills, and journey. Let’s keep in touch!</p>
-            <div class="button-group flex gap-4">
-                <button class="bg-transparent border text-black px-4 py-2 rounded">View Projects</button>
-                <button class="bg-transparent border text-black px-4 py-2 rounded">Download CV</button>
+        <section id="aboutme" class="aboutme-section min-h-[80vh] flex flex-col justify-center items-center gap-[20px] px-12 py-6">
+            <div class="container flex gap-20">
+                <div class="aboutme-image">
+                    <img src="img/my-photo.png" alt="Foto Azzahra" class="w-[350px] rounded-2xl relative"/>
+                </div>
+                <div class="aboutme-content w-3/4">
+                    <h1 class="text-5xl font-bold">About Me</h1><br><br>
+                    <p class="text-lg text-justify">I am a Fresh Graduate in Informatics (GPA 3.84) with a strong foundation in technology and problem solving. I have internship experience, most recently as a Full Stack Web Developer, where I built systems to improve efficiency and reduce costs. I also completed a data analysis project using Machine Learning and worked as a Python tutor for students, which strengthened my technical and communication skills.<br><br>I’m excited to start my professional journey and collaborate on projects. I believe each project helps me to improve my skills and build systems that are more impactful in the future.</p>
+                </div>
             </div>
         </section>
         <hr>
 
         <!-- Project Section -->
-        <section id="projects" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1>Hi, Bimo! Welcome To My Digital Space ✨</h1>
-            <p>I'm <b>Azzahra Auliya Rahmah</b>
-            - Currently exploring and growing in Web Development and Data Analysis.</p>
-            <p>Here you’ll find my projects, skills, and journey. Let’s keep in touch!</p>
-            <div class="button-group flex gap-4">
-                <button class="bg-transparent border text-black px-4 py-2 rounded">View Projects</button>
-                <button class="bg-transparent border text-black px-4 py-2 rounded">Download CV</button>
+        <section id="projects" class="project-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+            <div class="container relative">
+                <div class="flex justify-center">
+                    <h1 class="text-5xl font-bold">My Projects</h1>
+                </div>
+                <br><br>
+                <!-- Project Card -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/pool-store.png" alt="Project Pool Store"  class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">Pool Store Platform</p>
+                        <p class="text-sm font-light text-gray-600">A mobile e-commerce app design for selling swimming equipment from multiple stores.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/student-portal.png" alt="Project Student Portal"  class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">Student Portal</p>
+                        <p class="text-sm font-light text-gray-600">A mobile app to assist student in managing their academic activities, such as course information and checking grades.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/job-portal.png" alt="Project Job Portal"  class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">UCareer - Job Portal</p>
+                        <p class="text-sm font-light text-gray-600">This website created to help UAI students and beyond discover to apply jobs that match their skills and interests.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/job-order-confirmation.png" alt="Project JOCS" class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">Job Order Confirmation System</p>
+                        <p class="text-sm font-light text-gray-600">A real project developed and implemented to improve manpower efficiency and reduce idle time by monitoring and confirming jobs in production. Implemented at TACI.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/data-science.png" alt="Project Data Science" class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">Clustering Analysis on Global Video Game Sales</p>
+                        <p class="text-sm font-light text-gray-600">Uncovered patterns in best-selling games worldwide, revealing trends by genre, platform, and region for smarter business insights.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white shadow-md rounded-xl p-6">
+                        <div class="aboutme-image">
+                            <img src="img/personal-portfolio.png" alt="Project Personal Portfolio" class="rounded-2xl w-full h-48 object-cover"/>
+                        </div><br>
+                        <p class="text-black font-semibold text-xl pb-2">Personal Portfolio Website</p>
+                        <p class="text-sm font-light text-gray-600">A responsive portfolio website showcasing projects, skills, and experience, built with HTML, CSS, JavaScript, and Tailwind CSS, designed for a clean and modern user experience.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
 
         <!-- Skill Section -->
-        <section id="skills" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1>Hi, Bimo! Welcome To My Digital Space ✨</h1>
-            <p>I'm <b>Azzahra Auliya Rahmah</b>
-            - Currently exploring and growing in Web Development and Data Analysis.</p>
-            <p>Here you’ll find my projects, skills, and journey. Let’s keep in touch!</p>
-            <div class="button-group flex gap-4">
-                <button class="bg-transparent border text-black px-4 py-2 rounded">View Projects</button>
-                <button class="bg-transparent border text-black px-4 py-2 rounded">Download CV</button>
+        <section id="skills" class="skill-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+            <div class="container relative">
+                <div class="flex justify-center">
+                    <h1 class="text-5xl font-bold">Skills</h1>
+                </div>
+                <br><br>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                    <!-- Skill Card -->
+                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                        <img src="html-logo.png" alt="HTML" class="w-12 h-12 mb-2">
+                        <p class="text-sm font-medium text-gray-700">HTML, CSS, JavaScript</p>
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                        <img src="css-logo.png" alt="CSS" class="w-12 h-12 mb-2">
+                        <p class="text-sm font-medium text-gray-700">UI/UX Design</p>
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
+                        <p class="text-sm font-medium text-gray-700">Full Stack Development</p>
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
+                        <p class="text-sm font-medium text-gray-700">JavaScript</p>
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
+                        <p class="text-sm font-medium text-gray-700">JavaScript</p>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
