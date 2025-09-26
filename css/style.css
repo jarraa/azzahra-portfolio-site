@@ -1,4 +1,74 @@
-.main-header {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    background: linear-gradient(to right, #f8f9fa, #7f8bea);
+}
+
+/* Space Background */
+.home-section {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-500px, -500px); }
+}
+
+/* Welcome message */ 
+.welcome-message { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    letter-spacing: 1px;
+} 
+
+.welcome-message h1 { 
+    font-size: large; 
+    color: #f9d371;
+    font-weight: 600; 
+} 
+
+.welcome-message p { 
+    font-size: small; 
+    font-weight: 500; 
+    color: rgb(255, 245, 227);
+} 
+
+/* Introduction Text */ 
+.introduction { 
+    letter-spacing: 1px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+} 
+
+.btn-p {
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #a5b4fc;
+    border-radius: 50px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-cv {
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #a5b4fc;
+    border-radius: 50px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.footer-content {
+    background: #2d367a;
 }
