@@ -19,10 +19,10 @@
         <!-- Navigation Menu -->
         <nav class="navbar flex justify-between items-center p-6" id="navbar">
             <div class="main-title">
-                <b class="text-2xl text-purple-900">👩🏼‍💻Azzahra's Portfolio</b>
+                <b><a href="#home" class="text-2xl text-purple-900">👩🏼‍💻Azzahra's Portfolio</a></b>
             </div>
-            <div>
-                <ul class="flex gap-10 font-semibold">
+            <div class="nav-links">
+                <ul class="flex gap-6 font-semibold">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutme">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -54,8 +54,8 @@
                     <p class="text-2xl text-purple-300 font-bold pb-4">Bachelor's Degree in Informatics</p>
                     <p class="text-base text-purple-50 font-semibold pb-4">Currently exploring and growing in Web Development, UI/UX Design, and Data Analysis.</p>
                     <div class="button-group flex pt-8 gap-6">
-                        <a href="#projects" class="btn-p border text-black px-6 py-4">View Projects</a>
-                        <button class="btn-cv bg-transparent border text-black px-6 py-4">Download CV</button>
+                        <a href="#projects" class="btn-p border text-black px-6 py-4 relative">View Projects</a>
+                        <button class="btn-cv bg-transparent border text-black px-6 py-4 relative">Download CV</button>
                     </div>
                 </div>
                 
@@ -148,37 +148,65 @@
         <hr>
 
         <!-- Skill Section -->
-        <section id="skills" class="skill-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+        <section id="skills" class="skill-section min-h-[60vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
             <div class="container relative">
                 <div class="flex justify-center">
                     <h1 class="text-5xl font-bold">Skills</h1>
                 </div>
                 <br><br>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                    <!-- Skill Card -->
-                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
-                        <img src="html-logo.png" alt="HTML" class="w-12 h-12 mb-2">
-                        <p class="text-sm font-medium text-gray-700">HTML, CSS, JavaScript</p>
-                    </div>
+                <div class="flex gap-6">
+                    <div class="border-2 border-purple-600 p-6 rounded-2xl">
+                        <h1 class="flex justify-center text-2xl font-bold">Web Development</h1><br>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <!-- Skill Card -->
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">HTML</p>
+                            </div>
 
-                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
-                        <img src="css-logo.png" alt="CSS" class="w-12 h-12 mb-2">
-                        <p class="text-sm font-medium text-gray-700">UI/UX Design</p>
-                    </div>
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">CSS</p>
+                            </div>
 
-                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
-                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
-                        <p class="text-sm font-medium text-gray-700">Full Stack Development</p>
-                    </div>
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">Javascript</p>
+                            </div>
 
-                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
-                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
-                        <p class="text-sm font-medium text-gray-700">JavaScript</p>
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">PHP</p>
+                            </div>
+                            
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">Full Stack Development</p>
+                            </div>
+                            
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">Responsive Design</p>
+                            </div>
+                            
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">Laravel Framework</p>
+                            </div>
+                            
+                            <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                                <p class="text-md font-bold text-gray-700">UI/UX Design</p>
+                            </div>
+                        </div>
                     </div>
+                
+                <div class="border-2 border-purple-600 p-6 rounded-2xl">
+                    <h1 class="flex justify-center text-2xl font-bold">Other Skills</h1><br>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                            <p class="text-md font-bold text-gray-700">Python</p>
+                        </div>
 
-                    <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
-                        <img src="js-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
-                        <p class="text-sm font-medium text-gray-700">JavaScript</p>
+                        <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                            <p class="text-md font-bold text-gray-700">Machine Learning</p>
+                        </div>
+
+                        <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
+                            <p class="text-md font-bold text-gray-700">Planning & Analysis</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,34 +214,72 @@
         <hr>
 
         <!-- Contact Section -->
-        <section id="contact" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1>Hi, Bimo! Welcome To My Digital Space ✨</h1>
-            <p>I'm <b>Azzahra Auliya Rahmah</b>
-            - Currently exploring and growing in Web Development and Data Analysis.</p>
-            <p>Here you’ll find my projects, skills, and journey. Let’s keep in touch!</p>
-            <div class="button-group flex gap-4">
-                <button class="bg-transparent border text-black px-4 py-2 rounded">View Projects</button>
-                <button class="bg-transparent border text-black px-4 py-2 rounded">Download CV</button>
-            </div>
+        <section id="contact" class="contact-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+            <div class="flex gap-15">
+                <div class="w-1/2">
+                    <h1 class="text-5xl font-bold">Let's Collaborate!</h1><br>
+                    <p class="text-lg font-normal text-gray-400">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p><br>
+                    <!-- Information Contact -->
+                    <div class="contact-info">
+                        <div class="personal-info">
+                            <p class="text-base">EMAIL
+                            <p>azzahraauliyar@gmail.com</p>
+                            </p><br>
+                            <p class="text-base">PHONE
+                            <p>+62 878-7180-647</p>
+                        </div>
+                        <div class="social-links flex gap-4 justify-center md:justify-start pt-6 relative">
+                            <a href="https://www.linkedin.com/in/azzahra-auliya-rahmah-321154148" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                            <a href="https://github.com/jarraa" target="_blank" class="text-blue-600 hover:underline">Github</a>
+                            <a href="https://portfolioazzahraauliya.my.canva.site/portfolioazzahraauliyar" target="_blank" class="text-blue-600 hover:underline">View Full Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Message -->
+                <div class="rounded-2xl border border-gray-300 p-6 w-1/2 bg-white relative">
+                    <form action="#" class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-black" for="name">Name</label>
+                            <input type="text" name="name" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black">
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label class="text-black" for="email">Email</label>
+                            <input type="email" name="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black">
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label class="text-black" for="message">Message</label>
+                            <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black"></textarea>      
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition">Send Message</button>
+                    </form>
+                </div>
+                </div>
+            </div>                         
         </section>
         <hr>
     </main>
 
     <!-- Footer Content -->
-    <footer>
-        <div class="footer-content flex justify-between text-white p-8">
-            <div class="footer-content text-center">
-                &copy; 2025 Azzahra Auliya Rahmah. All rights reserved.
+    <footer class="footer p-8">
+        <div class="container">
+            <div class="footer-content flex justify-between text-center text-white">
+                <div class="footer-left">
+                    <p class="footer-text m-0">&copy; 2025 Azzahra Auliya Rahmah. All rights reserved.</p> 
+                </div>
+                <div class="footer-right">
+                    <nav class="flex gap-4">
+                        <a href="#home">Home</a>
+                        <a href="#aboutme">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <ul class="flex gap-4">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-     </div>
+        </div>
     </footer>
 </body>
 </html>
