@@ -8,6 +8,7 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -17,49 +18,58 @@
     <!-- Header Content -->
     <header>
         <!-- Navigation Menu -->
-        <nav class="navbar flex justify-between items-center p-6" id="navbar">
+        <nav class="navbar fixed top-0 left-0 w-full shadow-md z-50 flex justify-between items-center p-6" id="navbar">
             <div class="main-title">
-                <b><a href="#home" class="text-2xl text-purple-900">👩🏼‍💻Azzahra's Portfolio</a></b>
+                <b><a href="#home" class="text-3xl text-purple-900">👩🏼‍💻Azzahra's Portfolio</a></b>
             </div>
             <div class="nav-links">
-                <ul class="flex gap-6 font-semibold">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="flex gap-8 font-semibold text-xl">
+                    <li><a href="#home" class="nav-link relative">Home</a></li>
+                    <li><a href="#aboutme" class="nav-link relative">About Me</a></li>
+                    <li><a href="#projects" class="nav-link relative">Projects</a></li>
+                    <li><a href="#skills" class="nav-link relative">Skills</a></li>
+                    <li><a href="#contact" class="nav-link relative">Contact</a></li>
                 </ul>
             </div>
-            
         </nav>
     </header>
     <hr>
 
     <!-- Main Content -->
     <main>
+        <!-- Modal Input Nama -->
+        <div id="welcomeModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-2xl p-6 w-80 flex flex-col gap-4">
+                <h2 class="text-xl font-semibold">Hello!</h2>
+                <p>Please enter your name:</p>
+                <input id="nameInput" type="text" placeholder="Your Name" class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button id="submitName" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Submit</button>
+            </div>
+        </div>
+
         <!-- Home Section -->
-        <section id="home" class="home-section min-h-[100vh] flex flex-col px-12 py-6">
+        <section id="home" class="home-section pt-24 min-h-[100vh] flex flex-col px-12 py-6">
             <br>
-            <div class="welcome-message text-center">
-                <h1 class="pb-2">Hi, Bimo! Welcome To My Digital Space ✨</h1>
+            <div class="welcome-message text-center opacity-0 animate-fadeIn">
+                <h1 class="pb-2">Hi, <span id="username"></span>! Welcome To My Digital Space ✨</h1>
                 <p>Here you'll find my projects, skills, and journey. Let’s keep in touch!</p>
             </div>
             <br><br><br><br>
 
             <!-- Introduction & Sample Project -->
             <div class="flex">
-                <div class="introduction">
+                <div class="introduction transform opacity-0 animate-slideInLeft">
                     <p class="text-2xl text-purple-50 font-semibold pb-2">My name is</p>
                     <p class="text-5xl text-purple-400 font-extrabold pb-4">Azzahra Auliya Rahmah</p>
                     <p class="text-2xl text-purple-300 font-bold pb-4">Bachelor's Degree in Informatics</p>
                     <p class="text-base text-purple-50 font-semibold pb-4">Currently exploring and growing in Web Development, UI/UX Design, and Data Analysis.</p>
-                    <div class="button-group flex pt-8 gap-6">
+                    <div class="button-group flex pt-8 gap-6 animate-slideInRight">
                         <a href="#projects" class="btn-p border text-black px-6 py-4 relative">View Projects</a>
-                        <button class="btn-cv bg-transparent border text-black px-6 py-4 relative">Download CV</button>
+                        <a href="attachment/CV-IT_Azzahra Auliya Rahmah.pdf" download="Azzahra_Auliya_Rahmah_CV.pdf" class="btn-cv bg-transparent border text-black px-6 py-4 relative">Download CV</a>
                     </div>
                 </div>
                 
-                <div class="-mt-16 pl-8">
+                <div class="-mt-16 pl-8 transform opacity-0 animate-slideInRight">
                     <img src="img/mockup-portfolio.png" alt="Project Mockup UI/UX" class="w-[400px] relative" />
                 </div>
              </div>
@@ -67,7 +77,7 @@
         <hr>
 
         <!-- About Section -->
-        <section id="aboutme" class="aboutme-section min-h-[80vh] flex flex-col justify-center items-center gap-[20px] px-12 py-6">
+        <section id="aboutme" class="aboutme-section pt-24 min-h-[80vh] flex flex-col justify-center items-center gap-[20px] px-12 py-6">
             <div class="container flex gap-20">
                 <div class="aboutme-image">
                     <img src="img/my-photo.png" alt="Foto Azzahra" class="w-[350px] rounded-2xl relative"/>
@@ -81,7 +91,7 @@
         <hr>
 
         <!-- Project Section -->
-        <section id="projects" class="project-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+        <section id="projects" class="project-section pt-24 min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
             <div class="container relative">
                 <div class="flex justify-center">
                     <h1 class="text-5xl font-bold">My Projects</h1>
@@ -148,7 +158,7 @@
         <hr>
 
         <!-- Skill Section -->
-        <section id="skills" class="skill-section min-h-[60vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+        <section id="skills" class="skill-section pt-24 min-h-[60vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
             <div class="container relative">
                 <div class="flex justify-center">
                     <h1 class="text-5xl font-bold">Skills</h1>
@@ -158,7 +168,7 @@
                     <div class="border-2 border-purple-600 p-6 rounded-2xl">
                         <h1 class="flex justify-center text-2xl font-bold">Web Development</h1><br>
                         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                        <!-- Skill Card -->
+                        <!-- Skill Web Dev -->
                             <div class="flex items-center justify-center p-4 bg-white shadow-md rounded-xl hover:shadow-lg transition">
                                 <p class="text-md font-bold text-gray-700">HTML</p>
                             </div>
@@ -192,7 +202,8 @@
                             </div>
                         </div>
                     </div>
-                
+                 
+                <!-- Other skill -->
                 <div class="border-2 border-purple-600 p-6 rounded-2xl">
                     <h1 class="flex justify-center text-2xl font-bold">Other Skills</h1><br>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -214,51 +225,59 @@
         <hr>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+        <section id="contact" class="contact-section pt-28 flex flex-col justify-center items-center gap-[20px] px-12 py-12">
             <div class="flex gap-15">
-                <div class="w-1/2">
+                <div class="w-1/2 relative">
                     <h1 class="text-5xl font-bold">Let's Collaborate!</h1><br>
                     <p class="text-lg font-normal text-gray-400">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p><br>
                     <!-- Information Contact -->
-                    <div class="contact-info">
+                    <div class="contact-info flex gap-30 items-center">
                         <div class="personal-info">
-                            <p class="text-base">EMAIL
-                            <p>azzahraauliyar@gmail.com</p>
-                            </p><br>
-                            <p class="text-base">PHONE
-                            <p>+62 878-7180-647</p>
+                            <div class="email-info">
+                                <p class="text-base">EMAIL
+                                <p>azzahraauliyar@gmail.com</p>
+                            </div><br>
+                            <div class="phone-info">
+                                <p class="text-base">PHONE
+                                <p>+62 878-7180-647</p>
+                            </div>
                         </div>
-                        <div class="social-links flex gap-4 justify-center md:justify-start pt-6 relative">
-                            <a href="https://www.linkedin.com/in/azzahra-auliya-rahmah-321154148" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
-                            <a href="https://github.com/jarraa" target="_blank" class="text-blue-600 hover:underline">Github</a>
-                            <a href="https://portfolioazzahraauliya.my.canva.site/portfolioazzahraauliyar" target="_blank" class="text-blue-600 hover:underline">View Full Portfolio</a>
+                        <div class="social-links flex flex-col gap-4 relative">
+                            <div class="icon-link text-5xl">
+                                <a href="https://www.linkedin.com/in/azzahra-auliya-rahmah-321154148" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/jarraa" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="portfolio-link">
+                                <a href="https://portfolioazzahraauliya.my.canva.site/portfolioazzahraauliyar" target="_blank" class="text-blue-500 hover:underline">View Full Portfolio</a>
+                            </div>
                         </div>
                     </div>
+                    <!-- Tempat untuk menampilkan pesan setelah submit -->
+                    <div id="messages-list" class="mt-6 space-y-4 relative"></div>
                 </div>
 
                 <!-- Form Message -->
                 <div class="rounded-2xl border border-gray-300 p-6 w-1/2 bg-white relative">
-                    <form action="#" class="flex flex-col gap-4 w-full">
+                    <form id="contactForm" class="flex flex-col gap-4 w-full">
                         <div class="flex flex-col gap-2">
                             <label class="text-black" for="name">Name</label>
-                            <input type="text" name="name" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black">
+                            <input type="text" name="name" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
                         </div>
                         
                         <div class="flex flex-col gap-2">
                             <label class="text-black" for="email">Email</label>
-                            <input type="email" name="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
                         </div>
                         
                         <div class="flex flex-col gap-2">
                             <label class="text-black" for="message">Message</label>
-                            <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black"></textarea>      
+                            <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required></textarea>      
                         </div>
                         
                         <button type="submit" class="bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition">Send Message</button>
                     </form>
                 </div>
-                </div>
-            </div>                         
+            </div>                        
         </section>
         <hr>
     </main>
@@ -272,14 +291,17 @@
                 </div>
                 <div class="footer-right">
                     <nav class="flex gap-4">
-                        <a href="#home">Home</a>
-                        <a href="#aboutme">About Me</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#home" class="nav-footer">Home</a>
+                        <a href="#aboutme" class="nav-footer">About Me</a>
+                        <a href="#projects" class="nav-footer">Projects</a>
+                        <a href="#contact" class="nav-footer">Contact</a>
                     </nav>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
