@@ -48,7 +48,7 @@
         </div>
 
         <!-- Home Section -->
-        <section id="home" class="home-section pt-24 min-h-[100vh] flex flex-col px-12 py-6">
+        <section id="home" class="home-section pt-24 min-h-[100vh] flex flex-col py-6">
             <br>
             <div class="welcome-message text-center opacity-0">
                 <h1 class="pb-2">Hi, <span id="username"></span>! Welcome To My Digital Space ✨</h1>
@@ -57,7 +57,7 @@
             <br><br><br><br>
 
             <!-- Introduction & Sample Project -->
-            <div class="flex">
+            <div class="container flex">
                 <div class="introduction transform opacity-0">
                     <p class="text-2xl text-purple-50 font-semibold pb-2">My name is</p>
                     <p class="text-5xl text-purple-400 font-extrabold pb-4">Azzahra Auliya Rahmah</p>
@@ -77,24 +77,26 @@
         <hr>
 
         <!-- About Section -->
-        <section id="aboutme" class="aboutme-section pt-24 min-h-[80vh] flex flex-col justify-center items-center gap-[20px] px-12 py-6">
-            <div class="container flex gap-20">
-                <div class="aboutme-image">
-                    <img src="img/my-photo.png" alt="Foto Azzahra" class="w-[350px] rounded-2xl relative"/>
-                </div>
-                <div class="aboutme-content w-3/4">
-                    <h1 class="text-5xl font-bold">About Me</h1><br><br>
-                    <p class="text-lg text-justify">I am a Fresh Graduate in Informatics (GPA 3.84) with a strong foundation in technology and problem solving. I have internship experience, most recently as a Full Stack Web Developer, where I built systems to improve efficiency and reduce costs. I also completed a data analysis project using Machine Learning and worked as a Python tutor for students, which strengthened my technical and communication skills.<br><br>I’m excited to start my professional journey and collaborate on projects. I believe each project helps me to improve my skills and build systems that are more impactful in the future.</p>
+        <section id="aboutme" class="aboutme-section pt-24 min-h-[80vh] flex flex-col justify-center items-center gap-[20px] py-6">
+            <div class="container">
+                <div class="aboutme-content flex flex-col md:flex-row items-center md:items-start gap-12 relative">
+                    <div class="aboutme-image">
+                        <img src="img/my-photo.png" alt="Foto Azzahra" class="w-[350px] rounded-2xl relative"/>
+                    </div>
+                    <div class="aboutme-text w-3/4">
+                        <h1 class="text-5xl font-bold">About Me</h1><br><br>
+                        <p class="text-lg text-justify">I am a Fresh Graduate in Informatics (GPA 3.84) with a strong foundation in technology and problem solving. I have internship experience, most recently as a Full Stack Web Developer, where I built systems to improve efficiency and reduce costs. I also completed a data analysis project using Machine Learning and worked as a Python tutor for students, which strengthened my technical and communication skills.<br><br>I’m excited to start my professional journey and collaborate on projects. I believe each project helps me to improve my skills and build systems that are more impactful in the future.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <hr>
 
         <!-- Project Section -->
-        <section id="projects" class="project-section pt-24 min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+        <section id="projects" class="project-section pt-24 min-h-[100vh] flex flex-col justify-center items-center gap-[20px] py-12">
             <div class="container relative">
                 <div class="flex justify-center">
-                    <h1 class="text-5xl font-bold">My Projects</h1>
+                    <h1 class="text-5xl font-bold">Featured Projects</h1>
                 </div>
                 <br><br>
                 <!-- Project Card -->
@@ -106,6 +108,12 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">Pool Store Platform</p>
                         <p class="text-sm font-light text-gray-600">A mobile e-commerce app design for selling swimming equipment from multiple stores.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Layout & Interaction</span>
+                            <span class="tag">Prototype Testing</span>
+                        </div>
                     </div>
 
                     <!-- Card 2 -->
@@ -115,6 +123,12 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">Student Portal</p>
                         <p class="text-sm font-light text-gray-600">A mobile app to assist student in managing their academic activities, such as course information and checking grades.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">User Research & Persona</span>
+                            <span class="tag">Prototype Navigation</span>
+                        </div>
                     </div>
 
                     <!-- Card 3 -->
@@ -124,6 +138,11 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">UCareer - Job Portal</p>
                         <p class="text-sm font-light text-gray-600">This website created to help UAI students and beyond discover to apply jobs that match their skills and interests.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">Frontend Development</span>
+                            <span class="tag">Responsive Web Design</span>
+                            <span class="tag">Navigation</span>
+                        </div>
                     </div>
 
                     <!-- Card 4 -->
@@ -133,6 +152,14 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">Job Order Confirmation System</p>
                         <p class="text-sm font-light text-gray-600">A real project developed and implemented to improve manpower efficiency and reduce idle time by monitoring and confirming jobs in production. Implemented at TACI.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">Full Stack Web Dev</span>
+                            <span class="tag">Analysis Requirement</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">RESTful API Integration</span>
+                            <span class="tag">Database Design and CRUD Operations</span>
+                            <span class="tag">Deployment & Testing</span>
+                        </div>
                     </div>
 
                     <!-- Card 5 -->
@@ -142,6 +169,13 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">Clustering Analysis on Global Video Game Sales</p>
                         <p class="text-sm font-light text-gray-600">Uncovered patterns in best-selling games worldwide, revealing trends by genre, platform, and region for smarter business insights.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Data Cleaning</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
                     </div>
 
                     <!-- Card 6 -->
@@ -151,6 +185,12 @@
                         </div><br>
                         <p class="text-black font-semibold text-xl pb-2">Personal Portfolio Website</p>
                         <p class="text-sm font-light text-gray-600">A responsive portfolio website showcasing projects, skills, and experience, built with HTML, CSS, JavaScript, and Tailwind CSS, designed for a clean and modern user experience.</p>
+                        <div class="portfolio-tags mt-4">
+                            <span class="tag">Frontend Development</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">DOM Manipulation & Event Handling</span>
+                            <span class="tag">UI/UX Design & Wireframing</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,7 +201,7 @@
         <section id="skills" class="skill-section pt-24 min-h-[60vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
             <div class="container relative">
                 <div class="flex justify-center">
-                    <h1 class="text-5xl font-bold">Skills</h1>
+                    <h1 class="text-5xl font-bold">Skills Set</h1>
                 </div>
                 <br><br>
                 <div class="flex gap-6">
@@ -222,75 +262,86 @@
                 </div>
             </div>
         </section>
-        <hr>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section pt-24 min-h-[100vh] flex flex-col justify-center items-center gap-[20px] px-12 py-12">
+            <div class="container relative">
+                <div class="flex justify-center">
+                    <h1 class="text-5xl font-bold">Certificates</h1>
+                </div>
+                <br><br>
+            </div>
+        </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section pt-28 flex flex-col justify-center items-center gap-[20px] px-12 py-12">
-            <div class="flex gap-15">
-                <div class="w-1/2 relative">
-                    <h1 class="text-5xl font-bold">Let's Collaborate!</h1><br>
-                    <p class="text-lg font-normal text-gray-400">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p><br>
-                    <!-- Information Contact -->
-                    <div class="contact-info flex gap-30 items-center">
-                        <div class="personal-info">
-                            <div class="email-info">
-                                <p class="text-base">EMAIL
-                                <p>azzahraauliyar@gmail.com</p>
-                            </div><br>
-                            <div class="phone-info">
-                                <p class="text-base">PHONE
-                                <p>+62 878-7180-647</p>
+        <section id="contact" class="contact-section pt-28 flex flex-col justify-center items-center gap-[20px] py-12">
+            <div class="container">
+                <div class="contact-content grid grid-cols-2 gap-20 relative">
+                    <div class="flex flex-col">
+                        <h1 class="text-5xl font-bold">Let's Collaborate!</h1><br>
+                        <p class="text-lg font-normal text-gray-400">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p><br>
+                        <!-- Information Contact -->
+                        <div class="contact-info flex gap-30 items-center">
+                            <div class="personal-info">
+                                <div class="email-info">
+                                    <p class="text-base">EMAIL
+                                    <p>azzahraauliyar@gmail.com</p>
+                                </div><br>
+                                <div class="phone-info">
+                                    <p class="text-base">PHONE
+                                    <p>+62 878-7180-647</p>
+                                </div>
+                            </div>
+                            <div class="social-links md:items-start flex flex-col gap-4 relative">
+                                <div class="icon-link gap-4 sm:gap-6 md:gap-8 text-3xl sm:text-4xl md:text-5xl">
+                                    <a href="https://www.linkedin.com/in/azzahra-auliya-rahmah-321154148" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/jarraa" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <div class="portfolio-link">
+                                    <a href="https://portfolioazzahraauliya.my.canva.site/portfolioazzahraauliyar" target="_blank" class="text-blue-500 hover:underline">View Full Portfolio</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="social-links flex flex-col gap-4 relative">
-                            <div class="icon-link text-5xl">
-                                <a href="https://www.linkedin.com/in/azzahra-auliya-rahmah-321154148" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/jarraa" target="_blank" class="text-blue-500 transform transition duration-300 hover:scale-125 hover:text-blue-800"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                            <div class="portfolio-link">
-                                <a href="https://portfolioazzahraauliya.my.canva.site/portfolioazzahraauliyar" target="_blank" class="text-blue-500 hover:underline">View Full Portfolio</a>
-                            </div>
-                        </div>
+                        <!-- Tempat untuk menampilkan pesan setelah submit -->
+                        <div id="messages-list" class="mt-6 space-y-4 relative"></div>
                     </div>
-                    <!-- Tempat untuk menampilkan pesan setelah submit -->
-                    <div id="messages-list" class="mt-6 space-y-4 relative"></div>
-                </div>
 
-                <!-- Form Message -->
-                <div class="rounded-2xl border border-gray-300 p-6 w-1/2 bg-white relative">
-                    <form id="contactForm" class="flex flex-col gap-4 w-full">
-                        <div class="flex flex-col gap-2">
-                            <label class="text-black" for="name">Name</label>
-                            <input type="text" name="name" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
-                        </div>
-                        
-                        <div class="flex flex-col gap-2">
-                            <label class="text-black" for="email">Email</label>
-                            <input type="email" name="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
-                        </div>
-                        
-                        <div class="flex flex-col gap-2">
-                            <label class="text-black" for="message">Message</label>
-                            <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required></textarea>      
-                        </div>
-                        
-                        <button type="submit" class="bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition">Send Message</button>
-                    </form>
-                </div>
-            </div>                        
+                    <!-- Form Message -->
+                    <div class="rounded-2xl border border-gray-300 p-6 bg-white relative">
+                        <form id="contactForm" class="flex flex-col gap-4 w-full">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-black" for="name">Name</label>
+                                <input type="text" name="name" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
+                            </div>
+                            
+                            <div class="flex flex-col gap-2">
+                                <label class="text-black" for="email">Email</label>
+                                <input type="email" name="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required>
+                            </div>
+                            
+                            <div class="flex flex-col gap-2">
+                                <label class="text-black" for="message">Message</label>
+                                <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black" required></textarea>      
+                            </div>
+                            
+                            <button type="submit" class="bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>   
+            </div>                     
         </section>
         <hr>
     </main>
 
     <!-- Footer Content -->
-    <footer class="footer p-8">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content flex justify-between text-center text-white">
+            <div class="footer-content">
                 <div class="footer-left">
-                    <p class="footer-text m-0">&copy; 2025 Azzahra Auliya Rahmah. All rights reserved.</p> 
+                    <p class="footer-text">&copy; 2025 Azzahra Auliya Rahmah. All rights reserved.</p> 
                 </div>
                 <div class="footer-right">
-                    <nav class="flex gap-4">
+                    <nav class="footer-nav">
                         <a href="#home" class="nav-footer">Home</a>
                         <a href="#aboutme" class="nav-footer">About Me</a>
                         <a href="#projects" class="nav-footer">Projects</a>

@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong> ${message}</p>
     `;
-    newMsg.className = 'bg-gray-200 text-black p-4 rounded-xl shadow break-words w-130';
+    newMsg.className = 'bg-gray-200 text-black p-4 rounded-xl shadow break-words w-full';
     list.appendChild(newMsg);
 
     form.reset();
