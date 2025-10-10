@@ -5,20 +5,47 @@ const nameInput = document.getElementById('nameInput');
 const usernameSpan = document.getElementById('username');
 
 window.onload = () => {
-    modal.classList.remove('hidden');
+  modal.classList.remove('hidden');
 }
 
 // Handle tombol submit
 submitBtn.addEventListener('click', () => {
-    const name = nameInput.value.trim();
-    if (name) {
-        usernameSpan.textContent = name;
-        modal.classList.add('hidden'); 
-    } else {
-        alert('Please enter your name!');
-    }
+  let name = nameInput.value.trim();
+  if (name) {
+    // Ubah huruf depan jadi kapital
+    name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    usernameSpan.textContent = name;
+    modal.classList.add('hidden'); 
+
+    // Tunggu sedikit biar transisi modal kelar
+    setTimeout(() => {
+      // Tambah animasi setelah modal ditutup
+      document.querySelector('.welcome-message').classList.add('animate-fadeIn');
+
+      const intro = document.querySelector('.introduction');
+      intro.classList.add('animate-slideInLeft');
+
+      const img = document.querySelector('.pl-8');
+      img.classList.add('animate-slideInRight');
+
+      const buttons = document.querySelector('.button-group');
+      setTimeout(() => {
+        buttons.classList.add('animate-slideInRight');
+      }, 500); 
+    }, 500);
+
+  } else {
+    alert('Please enter your name!');
+  }
 });
 
+// Handle tombol Enter
+nameInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+      event.preventDefault(); 
+      submitBtn.click(); 
+  }
+});
 
 /// SUBMIT MESSAGE FORM
 document.addEventListener('DOMContentLoaded', () => {
