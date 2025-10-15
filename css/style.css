@@ -204,7 +204,8 @@ h1, h2, p, label, a, button, span {
   }
 
   .nav-container {
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 
   .footer-nav {
@@ -212,7 +213,25 @@ h1, h2, p, label, a, button, span {
     justify-content: center;
     gap: 1rem;
   }
+
+  .social-links {
+    font-size: medium;
+  }
 }
+
+#scrollContainer {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+}
+
 
 /* Hilangkan scrollbar */
 .no-scrollbar::-webkit-scrollbar {
