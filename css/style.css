@@ -232,7 +232,6 @@ h1, h2, p, label, a, button, span {
   flex: 0 0 auto;
 }
 
-
 /* Hilangkan scrollbar */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -246,6 +245,13 @@ h1, h2, p, label, a, button, span {
 .aboutme-section, .certificates-section {
   background: radial-gradient(circle at top, #c4c4ea, #ffffff);
   color: black;
+}
+
+#home,
+#aboutme,
+#projects,
+#certificates {
+  scroll-margin-top: 30px; 
 }
 
 /* Welcome message */ 
