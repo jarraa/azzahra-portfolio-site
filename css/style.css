@@ -147,8 +147,8 @@ h1, h2, p, label, a, button, span {
   animation: moveStars 60s linear infinite;
 }
 
-/* Mobile Design */
-@media (max-width: 810px) {
+/* Tab Design */
+@media (max-width: 1023px) {
   .container {
     padding: 0 1.5rem;
   }
@@ -198,24 +198,52 @@ h1, h2, p, label, a, button, span {
   }
 }
 
-@media (max-width: 390px) {
+/* Mobile Design */
+@media (max-width: 768px) {
   .container {
     padding: 0 1rem;
   }
 
   .nav-container {
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .nav-item {
+    padding-left: 35px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: linear-gradient(to right, #f8f9fa, #7f8bea);
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 
   .footer-nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .social-links {
     font-size: medium;
+  }
+
+  .contact-content {
+    grid-template-columns: 0fr;
+    gap: 2rem;
   }
 }
 
